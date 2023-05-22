@@ -1,4 +1,4 @@
-This repository contains a Dockerized Vue.js application. Follow the instructions below to run the application using Docker.
+This repository contains a Dockerized Vue.js application with nginx. Follow the instructions below to run the application using Docker.
 
 ## Prerequisites
 Docker: Make sure you have Docker installed on your system. You can get it from the Docker website.

@@ -1,29 +1,25 @@
-# vue-dockerized
+This repository contains a Dockerized Vue.js application. Follow the instructions below to run the application using Docker.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Prerequisites
+Docker: Make sure you have Docker installed on your system. You can get it from the Docker website.
+## Clone & run dockerized vue app
+Clone this repository to your local machine:
 
-## Recommended IDE Setup
+> `git clone https://github.com/sebastiancoronel/docker-vue.git`
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Navigate to the application directory:
 
-## Customize configuration
+> `cd docker-vue`
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Build the Docker image using the following command:
 
-## Project Setup
+> `docker build -t vue-image .`
 
-```sh
-npm install
-```
+Once the image is successfully built, you can run the container using the following command:
+> `docker run -it -p 8080:80 --rm --name vue-container vue-image`
 
-### Compile and Hot-Reload for Development
+This command will run the container based on the dvue image and map the local port 8080 to port 80 inside the container.
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Open your web browser and enter the following URL:
+> `http://localhost:8080`
+    
